@@ -1,0 +1,175 @@
+SECURITY CONTROL CATEGORIES:
+
+BCP: Business continuity plans
+IRP: Incident response plans
+
+- Technical
+- Administrative (policies, procedures, guidelines, IRP, BCP, Data classification, etc.)
+- Physical
+- Operational
+- Managerial
+
+EXAMINING SECURITY CONTROL TYPES:
+
+- Preventative (Data encryption, application filtering, access control systems)
+- Deterrant (signs, security cams, guards)
+- Detective (cctv, motion sens, IDS/IPS, SIEM (Sec Inf & Evnt Mng))
+- Corrective (data backup and restory procs, IRP and IR procedures)
+- Compensating (network segmentation, virtualization)
+- Recovery (DRP, data backup and restor utils, BCP)
+- Directive (acceptable use policy (AUP), password policy, data classification policy)
+
+EXAMINING THE PRINCIPLES OF SECURITY:
+
+- Security Triangle:
+	* Confidentiality, integrity, and availability
+	
+- Confidentiality: Ensure sensitive data is accessible only to authorized individuals or systems
+- Integrity: Ensure Data remains accurate, consistent, and unaltered during storage, 
+		transmission, and processing.
+- Availability: Ensure auth users have timely and uninterrupted access to rescs. and systems.
+
+- Security Triangle Support:
+
+	* Non-repudiation: Integrity check control, accountability, prove origin and integ of data.
+	* Authenticity: Confirm legit users, data sources, and comms helps ensure info is acc and trustworthy, 
+		free form unauth alterations.
+	* Accountability: Estab a traceable record of actions and actv. that make indiv responsible for 
+		actions contrib. to the overall security and integ of data, sys, and comms.
+	* Principle of Lease Privilege: Restrict user and sys permis. to min necess level reduces potential att. surfaces,
+		and safeguards confidentiality, integrity and availability of resrcs.
+	
+- Ensure confidentiality:
+	* encryption
+	* access contr.
+	* secure comms chans.
+	
+- Ensure integ:
+	* hashing
+	* digital signs.
+	* integ checks
+
+- Ensure Availability:
+	* redundancy
+	* load balancing
+	* backups
+
+EXAMINING AUTHENTIFICATION FACTORS:
+
+- Authentification: Identity validation
+- Auth Factor: distinct form of evidence or proof of identity
+
+- username, pwd
+- PIN
+- smart card
+- key fob
+- auth application
+- device thats registered or compliant
+- biometrics
+- DNA
+- specific location
+- trusted network
+- pattern recognition or arrangement
+
+- MFA: gain access to app with two or more auth steps (electronically)
+
+EXAMINING AUTHORIZATION AND ACCESS CONTROL MODELS:
+
+- Managing authorization, implement:
+	* DAC: data owners determine and manage access permissions to their resources
+	* Mandatory access control (MAC): A central authority determines access permissions based on
+		predefined security labers or classifications.
+Rol	* RBAC: A central authority determines access permissions based on predefined security labes or class..
+Rul	* Rule-based access control: A set of explicitly defined rules or conditions determines access decis..
+
+EXAMINING AUTHENTICATION, AUTHORIZATION, AND ACCOUNTING (AAA):
+
+- Accounting: process of tracking and recording user activ, resource usage within a sys, providing an
+	audit trail of actions for accountability, compiance, and monitoring purposes.
+	
+** Typically AAA is brought together to enable remove access with RADIUS which is a networking protocol
+	to centralize and manage user AAA for remote network access. (RFC 2865)
+	
+- RADIUS is typically used for:
+	* Network access control (NAC): authenticate and authorize users who are accessing a network, such as 
+		WIFI or a VPN to ensure only authorized individ. gain access.
+	* Wireless networking: Help secure access to WIFI networks in etnerprises and public hotspots by
+		verifying user credentials.
+	* Remote access servers (RAS): control access to RAS such as dial-up and VPN servers.
+	* ISPs: authenticate and authorize users conncting to ISP networks, thereby managing bandwid. and services.
+
+** Ports used in RADIUS protocol are: 	- UDP Port 1645 or 1812 for authentication 
+										- UDP port 1646 or 1813 for accounting.
+	
+EXAMINING PHYSICAL SECURITY:
+
+- Bollards: provide barriers againsts vehicle-based attacks, thereby helping prevent access to sensitive areas.
+- Access control vestibule: creates a controlled entry point, which mitigates the risk of unauthorized
+	access to secure locations.
+- Fencing
+- Video surveillance
+- Security guards
+- Access badge
+- Lighting
+- Sensors: provide real-time detection and alerts for unauthorized movements, breaches, and environmental
+	changes, which enables early threat identification and response. Sensor types include:
+		* IR
+		* Pressure
+		* Microwave
+		* Ultrasonic
+
+EXAMING DECEPTION AND DISRUPTION TECHNOLOGY:
+
+- Deception and disruption tech: tools and techniques used to recognize and then divert an attacker within network.
+
+- Honeyfiles: a file or doc placed as bait in network to attract attackers. honeyfiles enable you to attract
+	and detect unauth access or exfiltration attempts. you then can study this info to identify the techniques
+	and potential intetions of bad actors without risking actual resources.
+- Honeytokens: A piece of fake or delib weak data placed in sys or network to act as decoy. Honeytokens enable you
+	to spot potential unauth activ or security breaches. study info to identify techniques and intents without risking
+	actualy network assets.
+- Honeypots: A deceptive sys or network designed to attract and trap potential attackers. honeypots enable you to monitor
+	the activities of bad actors or threat actors, and you then can study this info to identify techniq. and potential.
+	itentions without risking actualy network assets.
+- Honeynets: a network of honeypots designed to simulate larger, more enticing targets that enables you to lure
+	and study attackers. Honeynets allow you to monitor and study the activities of bad actors and threat actors without
+	risking actualy network assets.
+
+BUSINESS PROCESSES AND SECURITY OPERATIONS:
+
+- Sometimes business processes might not align with, and can impact, its security operations.
+
+- Stakeholders: have strong organization interest. 
+	* Positive affect: helping ensure alignment of sec objectives and enabling sec awareness and compliance within org.
+	* Neg affect: resisting implementation of sec measures, overlook vulner., decreasing sec awareness, and compromising
+		overall security posture.
+- Approval processes: 
+	* Pos aff: enhanc. decision-making through consider. of diverse perspect., thereby increas. likelihood of well-inf. 
+		and secure changes.
+	* Neg aff: result in miscomm. and uncontr. changes, disruptions, errors, and security vulnerabilities.
+- Ownership:
+	* Pos aff: by clearly defining and assigning responsi. for asset's mngmt, maint., and sec throughout its lifecycle.
+	* Neg aff: lack of ownership lead to diminished accountability, which makes challenging to ident. respons. parties
+		if security incidents or breaches occur.
+- Impact analysis:
+	* Pos aff: enable you to assess potential consequences of proposed changes. Organi. then can use test results to 
+		make strategic data-driven decisions and provide risk mitigation to ensure a successful systematic approach to
+		implementing changes.
+	* Neg aff: if changes are implem. w/o a comprehensive understanding of their potential conseq.. Results might be
+		unanticipated disruptions, financial losses, decreased user satis. or confid., and impaired organi. performance.
+- Standard operating procedure:
+	* Pos aff: help ensure sec meas. and protocols are consist. integrated into the change process, thereby enhancing 
+		an organizations ability to mitigate sec risks during transitions.
+	* Neg aff: failure to integ sec into std operating proced. within change mngmt can result in increased sec vuln.,
+		and dmg to organization's repution.
+- Maintenance windows:
+	* Pos aff: help ensure changes occur during scheduled, non-critical times; minimizing disrutpions; enhancing coord.;
+		and improving overall operational efficiency.
+	* Neg aff: unplan. service interr., confl., and oper. dirsuptions due to changes occurring at inopp. times.
+- Backout plans:
+	* Pos aff: prov. a safety net, allowing organi. to revert to a previous state if changes result in issues. This
+		minimizes downtime and helps ensure business continuity.
+	* Neg aff: intro prolonged downtime, data loss, service disruptions, and increased risk of issues during changes
+		that you cant resolve rapidly.
+
+
