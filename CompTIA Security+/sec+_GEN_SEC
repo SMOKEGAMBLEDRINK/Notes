@@ -172,4 +172,194 @@ BUSINESS PROCESSES AND SECURITY OPERATIONS:
 	* Neg aff: intro prolonged downtime, data loss, service disruptions, and increased risk of issues during changes
 		that you cant resolve rapidly.
 
+CHANGE MANAGEMENT IMPLICATIONS AND DOCUMENTATION:
 
+!! Identify and explain implciations of change management to security, given a scenario.
+
+- Tech implication of change management on security:
+	* Allow/deny lists
+	* Restricted activ.
+	* Downtime
+
+- Allow Deny lists:
+	* Pos: provides clear criter. for acc. or rej. changes and ensuring consistency, risk red., and eff. decis-makin.
+			Also enables control of assets or changes are permitted or prohibited, and help maintain sys integ, sec, compliance.
+	* Neg: overlooking changes could result in incorrect placement on deny list, resulting in service disruptions.
+			(ex. Blocking of necessary security update)
+			Also introd. complexity by extensive lists for numer. assets or change creep that leads to admin. chall.
+
+- Restricted Activities:
+	* Pos: reducing access priv., stricter control over crit changes, and enhan. prot. against unauth. mods that could
+			introd. vulner. or disruptions
+	* Neg: limit access to specific individuals or teams, ensuring controlled and secure handling of changes.
+
+- Downtime:
+	* Pos: allowing planned and controlled serv. inter. in which changes are implemented preventing unexpect. outages.
+			(ex. maintenance and restarts during off-peak hours to minimize user impact)
+	* Neg: affects users, services or dependancies. result in reduced avilability during crit ops. Uncoord. downtime 
+			can present challenges wit hrespect to minimizing disruptions.
+
+- Legacy Applications
+
+- Version control:
+	* Positive is ensuring of tracking of changes, which reduces errors, enhancing collab. and maint. histor. record 
+		of mods to crit assets.
+	* Negative introduce risk of unauth changes occuring, diff. in identifying the source issues, and potential data
+		data loss or sys instability due to untracked mods.
+
+- Documentation
+	- Updating Diagrams prov. curicial technical docs that aid in planning, implem., and troubshoot. of changes.
+		Negative is can lead to inacc. change planning, causing unexpe. issues during imple. and hindering troublesho.
+			effors. can result in prolonged downtime if issues occur
+	- Updating Policies and procedures can have a positive impact by ensuring that processes align with evolving 
+		tech. sec. requirements. This reduces risk and enhanc compli.
+			Negative is possible non-compli., sec vuln., and processes that hinder change imple. and mngt.
+
+EXAMINING ENCRYPTION SOLUTIONS:
+
+!! Identify and explain the importance of encryption, given a scenario.
+
+- Encryption:
+	* Block cipher: symmetric-key encryption algo. that encrypts data in fixed-size blocks by breaking it into chunks 
+						by breaking it into chunks for processing.
+	* Stream cipher: symetric-key encryption algo. that encrypts data bit-by-bit or byte-by-byte. It provides 	
+						continuous encryption and decryption of data streams.
+
+- Encryption levels:
+	* Full-disk: Encrypts the entire contents of a disk.
+	* Partition: Encrypts an isolated partition on a single disk.
+	* File: Encrypts a file within an operation system.
+	* Volume: Encrypts a logical disk. A volume can span multiple physical disks.
+	* Database: Encrypts a database instance.
+	* Record: Encrypts a set of data stored in a table thats within a database.
+
+- Encryption types:
+	* Asymmetric which is an encruption method that uses two mathematically aligned keys, known as a key pair 
+		(public/private keys) for encryption and ecryption.
+	* Symmetric, which is an encryption method that uses a single key for encryption and decryption.
+
+- Encryption keys:
+	* shared or preshared key (incl. pwds): A cryptographic key thats used for encryp. and decryp.. Must be kepy
+		confidential between authorized parties to maintain the sec of encrypt comms. or data.
+	* Key exchange: sharing cryptograhic key process between parties to enable encrypt. comms..
+	* Key length: size of crypto. key. Larger keys are potentially more secure than shorter key lengths. Longer keys 
+		require more processing power.
+	* Key stretching: strengthens resiliency of crypto key to brute force attacks. By applying hash function or block 
+		cipher to the key repeatedly, you increase its length and complexity, makes more resistant to attacks such as
+			brute force.
+	* Salting: process of adding an extra piece of data to a password before its run through a hashing algorithm. 
+	* Key management system (crypto. tool): Manages crypto keys and metadata.
+
+- Crypto tools:
+	* TPM: hardware-based sec. component that stores cyrpto keys, certs, and sens data, and sec storage for creds and 
+		encryption keys
+	* HSM: dedicated hardware device or appliance that provides secure key storage, management, and crypto ops.
+	* Secure enclaves: trusted and isolated environ. within a sys' hardware or software that protects sens data and
+		crypto ops.
+
+EXAMINING PUBLIC KEY INFRASTRUCTURE (PKI):
+
+!! Identify and explain the importance of public key infrastructure, given a scenario.
+
+- PKI: 
+	* A framework for securing comms through issuing and lifecycle management of digital keys and certs.
+	* Implemented to facilitate encryption, authentication, digital signatures in online transactions and comms.
+
+- PKI Components:
+	* Certificate authority (CA):
+		> Root/offline CA:
+			>> The highest-level authority in the cert hierarchy, responsible for issuing and signing certs to
+				subordinate CAs
+			>> This CA's security is especially crucial and is commonly taken offline to prevent a compromise..
+		> Subordinate/Issuing CA:
+			>> Interm. authority that operates under root CA issuing and signing digital certs. Issue all certs lower
+				than root CA in PKI hierarchy.
+		> Standalone CA vs Enterprise CA:
+			>> Standalone: independent CA that issues and manages certs, doesnt rely on a hierarchical structure, and
+				is typically used in smaller or isolate environments.
+			>> Enterprise: is integrated into an organizations network and issues and manages certs for internal use.
+		> Internal CA vs External CA:
+			>> Internal: CA used within organization's internal network to issue certs, with the authority not 
+				trusted outside the organization.
+			>> External: CA used for issuing certs to entities publically, with authority being trusted globally..
+		> Root of trust: a trusted entity or authority whose digital signature and public key are accepted as a 
+			foundation of trust in the PKI hierarchy 
+
+	* Digital Certificate:
+		> Electronic doc issued by trusted authority, or CA, that binds a public key to an indiv., device, or service.
+		> Docs serve as a means of authentication and encryption for secure coms, dig. signatures, and access control.
+
+	* Additional Components:
+		> Certificate Signing Request (CSR):
+			>> A formal request generated by an entity, such as an organization or user, to request digital cert from 
+				a CA
+			>> A CSR can be sent to an internal or external CA
+		> Certificate Revocaiton List (CRL):
+			>> Dynamically updated list maintained by CA containing serial nums of certs that have been revoked or
+				are invalid before expiry
+			>> Provides verificaiton and trustworthiness of the cert.
+			>> This is an older resource-intensive method for determining if a cert is valid or revoked.
+		> Online Certificate Status Protocol (OCSP):
+			>> real-time network protocol used to check validity and revocaiton status of certs
+			>> provides verification and trustworthiness of the cert
+			>> alternative method for determining if a cert is valid or revoked
+		> Online Responder:
+			>> a server that processes OCSP requests (certificate validity check requests)
+			>> This provides quick, real-time responses on the validity and revocation status of certs.
+			>> Less resource intesnive, greate efficiency
+		> Key escrow
+			>> Process of storing a copy of crypto keys with a trusted third-party
+			>> commonly done for recovery or backup purposes to protect the keys from lost or compromise
+
+EXAMINING DIGITAL CERTIFICATES:
+
+!! Identify and explain the importance of digital certificates, given a scenario.
+
+- Digital Certificates: electronic docs issued by a CA. Docs bind a public key to an individual, device, or service. 
+	Serve as means of authentication and encryption and are used to:
+	
+	* Secure comms using, among others, HTTPS, Secure Shell (SSH), and Secure File Transfer Protocol (SFTP).
+	* Create digital signatures
+	* Provide access control
+	* Provide strong authentication
+
+- Digital signatures: uses private key to create a unique value attached to a doc or message. Allows anyone with the
+	corresponding public key to verify the signature, ensuring it hasnt been tampered with and was indeed signed by
+	the private key holder.
+
+- Cert Types:
+	* X.509 Certs: Used for authentication, secure email, SSL (Secure Socket Layer) and TLS (Transport Layer Security)
+		encryption, code signing, viertual private networks (VPN), and more.
+		> File extensions for these certs:
+			>> .cer
+			>> .crt
+			>> .der
+			>> .pem
+			>> .pfx
+			>> .p12
+	* Public-Key crypto Standards #7 (PKCS#7) certs: Used for secure email attachments, code signing, and digital
+		signatures for docs.
+		> File extensions:
+			>> .p7b
+			>> .p7c
+			>> .p7m
+	* Public-Key Crypto Standards #12 (PKCS#12) certs: Used for storing private keys and associated X.509 cets, often
+		for secure authentication.
+		> File extensions:
+			>> .pfx
+			>> .p12
+	* Privacy Enhance Mail (PEM) certs: Used for SSL/TLS certs. Can include certs, private keys, and CA bundles.
+		> F.E:
+			>> .pem
+	* Distinguished Encoding Rules (DER) certs: Used in binary format for SSL/TLS certs and code signing.
+		> F.E:
+			>> .der
+			>> .cers
+	* Pretty Good Privacy (PGP) cert: Used for secure email comms and encryption of files and messages
+		> F.E:
+			>> .pgp
+			>> .asc
+	* Secure/Multipurpose Internet Mail Extensions (S/MIME) certs: Used for secure email comms and dig signatures
+		for message integrity.
+		> F.E:
+			>> .p7s
