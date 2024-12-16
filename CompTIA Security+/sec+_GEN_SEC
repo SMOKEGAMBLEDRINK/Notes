@@ -363,3 +363,54 @@ EXAMINING DIGITAL CERTIFICATES:
 		for message integrity.
 		> F.E:
 			>> .p7s
+
+EXAMINING ASSYMETRIC ENCRYPTION:
+
+- RSA (RIVESAT-SHAMIR-ADLEMAN): algorithm that relies on large prime numbers. encyrpts data with public key and requires
+	private key for decryption.
+
+- DSA (digital signature algorithm): used primarily for digital signatures and key exchange. verifies authenticity of
+	digital signatures and ensures data integ.
+
+- ECDSA (Elliptic curve digital signature algorithm): DSA variant, uses elliptic curve cryptography for digital signatures.
+	provides efficient and secure digital signatures, suitable for resource-constrained devices and applications
+
+- ElGamal: offers encryption and digital siganture capabilities. used for secure comms and authentication, with apps in both 
+	encryption and digital signatures.
+
+- DH/DHKE (Diffie-Hellman key exchange): used to securely exchange crypto keys over untrusted network. Enables two parties
+	to derive a shared secret key for secure comms without transmitting the key directly.
+
+- ECDH (elliptic curve Diffie-Hellman): DH variant, uses elliptic curve cryptography for secure key exchange. Provides 
+	efficient and secure key exchange, particularly suitable for constrained environments.
+
+EXAMINING SYMMETRIC ENCRYPTION:
+
+!! Identify and explain the importance of symmetric encryption given a scenario.
+
+- AES (advanced encryption standard): widely used, operates on fixed-size blocks of data. strong encryption by subbing 		
+	and, permuting data in a series of rounds, suitable for various security apps.
+
+- Twofish: strong security and efficient performance. robust encryption and used in variety of security apps, including disk 
+	encryption.
+
+- DES (data encryption standard): encrypts data in 64-bit blocks using 56-bit key. widely adopted for secure data comms,
+	largely been replaced by more secure algorithms such as AES.
+
+- RC5: aka Ron's code or rivest cipher, operates on varying size data blocks, employs variable number of rounds.
+
+- RC6: provide strong security and efficient performance, extends rc5 w/ additional features to enhance security.
+
+- CAST-128: simplicity and security, CAST is Carlisle Adams and Stafford Tavares, provides reliable encryption for secure
+	comms and data protection.
+
+- 3DES (triple data encryption standard): improvement over DES, 3DES applies DES algo 3 times in succession to improve
+	encryption strength, enhancing security.
+
+- RC4: generates a pseudorandom stream of bits. Widely used in early SSL/TLS protocols, largely deprecated due to 	
+	vulnerabilities.
+
+- Salsa20: stream cipher algorithm, designed for secure encryption, known for speed, suitable both hardware & software imple.
+
+- ChaCha20: salsa20 variant, provide stronger security and resistance to certain attacks, offers efficient and secure stream
+	cipher encryption, which makes it suitable for a wide range of cryptographic tasks.
