@@ -1,0 +1,52 @@
+THREAT ACTORS:
+
+- unskilled attackers
+- nation states
+- hacktivists 
+- insider threats
+- unintentional threats
+- organized crime
+
+SOCIAL ENGINEERING:
+
+- phishing
+- vishing
+- smishing (using text seemingly from legit ccompany)
+- IM
+
+BUSINESS EMAIL COMPROMISE:
+
+- Data compromise
+    * Asked for things
+        > names 
+        > account numbers
+        > private numbers
+        > usernames and email addresses
+        > schedules
+
+- Chief executive office (CEO) fraud: hack or spoof CEO email, then requests employee transfer money, purchase gift cards,
+    or conduct wire transfer
+
+- Email account compromise: attackers typically target a finance manager or accounts-receivable manager, and then sends
+    invoices to clients and/or suppliers.
+
+- attorney impersonation: attackers gain access to email acc of lawyer or law firm, then send invoices to clients via email.
+    recipients often pay these, as they assume their attorney or law firm is legitimate.
+
+- Attack Conduct:
+    * research
+    * establish infrastructure (includes fake websites and registered domain names)
+    * gain access (to a person or organization using phishing, soc eng through email, phone, text messages0)
+    * watch and learn (study how, when, and where a target sends or receives money. They try to discover a pattern of target
+        money)
+    * attack, after gaining trust of target and exploit knowledge of money flow to request a money transfer.
+
+- BEC Protection:
+    * using secure email systems and spam filters.
+    * enabling MFA for logins
+    * conducting end-user security-awareness training.
+    * using authorized sender systems, including:
+        > sender policy framework (SPF)
+        > Domain keys identified mail (DKIM)
+        > domain-based message authentication, reporting and conformance (DMARC)
+    * avoiding use of email-based invoice systems.
