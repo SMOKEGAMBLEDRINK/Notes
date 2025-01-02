@@ -1,0 +1,44 @@
+CLOUD-RELATED CONCEPTS:
+
+!! Describe a cloud responsibility matrix; hybrid ocnsiderations; third-party vendors; Infrastructure as code; serverless
+    microservices
+
+- Cloud Responsibilty: Responsibility matrix is a tool used because of Shared responsibilty model that exists with respect to public cloud. Its based on the fact that a cloud customer is responsible for moany of their security concerns, while simult., a cloud provider is responsible for others.
+
+- the most popular cloud deployment model today is the hybrid model, combo of cloud and on-presmises resources typically used by modern IT departments
+
+- public cloud involves third-party vendors, such as contractors, but differences do exist. Ex is that w/ cloud, theres typically much shorter contract durations and resources availiable on demand without long provisioning cycles and negotitations.
+
+- IaC (Infrastructure as code): revolutionary approach to managing and provisioning tech infrastructure in a scalable, efficient, and automated manner. It involves using machine-readable scripts or configuration files to define and deploy infrastructure resources, such as servers, networks and storage rather than relying on manual and error-prone processes.
+
+- Serverless computing: cloud-computing paradigm that allows developers to build and run apps without the need to manage traditional server infrastructure. In a serverless architecture:
+
+    * Developers only need to focus on writing code for individual functions or units of logic, which are executed in stateless, ephemeral onctainers in response to specific events or triggers.
+
+    * Cloud providers automatically handle provisioning, scaling, and management of resourcesm enabling developers to focus on coding business logic without worrying about server maintenance.
+
+- Microservers Infrastructure: modern architectural approach to building and deploying software apps. In this model:
+
+    * A large monolithic app is a broken down int osmaller, loosely coupled services, each responsible for a specific business capability or function. 
+
+    * These services communicate with each other through lightweight APIs, allowing them to be developed, deployed, and maintained independently.
+
+NETWORK INFRASTRUCTURE CONCEPTS:
+
+!! Describe network infrastructure concepts including physical isolation; logical segmentationl SDN; on-premises vs cloud; centralized vs decentralized architectures
+
+- Network infrastructures:
+
+    * Some networks carry such sensitive information that theyre air-gapped, which means theyre physically disconnected from public internet.
+
+    * Logical segmentation is a much more common approach and uses software constructs to create a virtual network inside a physical network. Technologies such as virtual local area networks (VLANS) and virtual extensible lans (VXLANs) are common methods of logical segmentation
+
+    * SDN is a revolutionary approach to network management and control that simplifies and centralizes management of network resources. It separates the control and data planes, enabling a admin to programmatically control network behavrior through a centralized software controller.
+
+- Centralized infrastructure: features the required network elements located ina central locaiton versus being dispersed through the geography of the IT department.
+
+    * Easier to secure since reousresc are more concentrated in a single locaiton and easier to protect with network apps/tec
+
+VIRTUALIZATION CONCEPTS:
+
+- Vritualization: software simulates hardware functionality to create avirtual computer system, which enables you to use one server to run multiple virtual systems 

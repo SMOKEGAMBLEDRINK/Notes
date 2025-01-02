@@ -235,7 +235,7 @@ EXAMINING ENCRYPTION SOLUTIONS:
 
 - Encryption types:
 	* Asymmetric which is an encruption method that uses two mathematically aligned keys, known as a key pair 
-		(public/private keys) for encryption and ecryption.
+		(public/private keys) for encryption and decryption.
 	* Symmetric, which is an encryption method that uses a single key for encryption and decryption.
 
 - Encryption keys:
