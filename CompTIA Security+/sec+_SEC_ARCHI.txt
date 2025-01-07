@@ -42,3 +42,470 @@ NETWORK INFRASTRUCTURE CONCEPTS:
 VIRTUALIZATION CONCEPTS:
 
 - Vritualization: software simulates hardware functionality to create avirtual computer system, which enables you to use one server to run multiple virtual systems 
+
+    * Server Virtualization 
+    * Network Virtualization
+    * Storage Virtualization
+    * Desktop virtualizaiton
+
+        > Hypervisor software makes VMs possible and we need to be concerned about securing VM OS.
+
+- Containers: enable operation of mutiple OS inside a single instance, consists of entire runtime environ bundled
+     into 1 packages, including all application:
+    
+    * Dependencies
+    * Libraries
+    * Config files
+    * Additionally binaries that are required for an application to run
+
+        > Typically manage containers using software such as KUBERNETES. Such packages are responsible for
+            scheduling and securing container deployments.
+
+IOT AND SCADA:
+
+- IOT Architectures: security implications: refers to pieces that comprise IoT networking systems including sensors,
+    actuators, cloud services, protocols and layers. 
+
+    * Security implication: significant, proliferation of connected devices increaes attack surface and potential vulner.
+
+    * Ensure robust sec measures such as encryption, authentication, access controls, and regular software updates help:
+        > safeguard sens data.
+        > protect against unauthorized access
+        > prevent malicious actors from exploiting IoT devices to compromise the overall system and user privacy.
+
+- ICS and SCADA Architectures: Security implications: Industrial control system and SCADA architec. models are of utmose concern,
+    as these systems control critical infrastructure and industrial processes. The potential consequences of sec breaches in
+    these environments can be severe and include:
+
+    * Produciton disruptions
+    * physical harm
+    * environmental damage
+
+        > Critical to hae stringent sec measures, network seg, air gapping, and continuous monitoring to defend against
+            cyber threats and unauthorized access for these architectures.
+
+- RTOS architectures: security implications: Real time operating system architectural model are paramount, as these systems often
+    are used in safety-critical applications and devices. Vulnerabilities or explois in an RTOS can lead to:
+
+    * real-time performance degradation
+    * loss of control
+    * life-threatening consequences
+
+        > critical that you have rigoroues sec testing, memory protection, and secure coding practices to ensure integrity
+            and reliability of a RTOS system.
+
+- Embedded system architectures: security implications: can be critical because of the constrained resources and limited processing
+    capabilities of these devices. Vulnerabilities in embedded systems can lead to:
+    
+    * unauthorized access
+    * data breaches
+    * potential exploitation of connected networks
+
+        > important to have robust sec measures, secure boot procedures, regular firmware updates to mitigate risks and
+            protect against cyber threats with these systems.
+
+ARCHITECTURAL MODEL CONSIDERATIONS:
+
+- Availability CONSIDERATIONS
+    * minimize downtime, ensure continuous operation w/ redundancy, fault tolerance and disaster recovery mechanisms
+    * service-level aggrements, monitoring, and scability factors
+
+- Resiliency CONSIDERATIONS: systems that can withstand and recover gracefully
+    * distributed architecture
+    * load balancing
+    * automated failover
+    * graceful degredation of nonessential functionalities
+
+- Cost Considerations:
+    * optomize resource allocation, selecting appropriate tech to achieve desired functionalities while minimize expenses.
+    * carefully evaluating:
+        > hardware, software, cloud services, and maintenance requirements
+        > organizations can strike a balance between performace and affordability
+
+- Respons iveness Considerations
+
+- Scalability Considerations
+
+- Ease-of-deployment Considerations
+
+- Considerations for risk transference
+
+- Ease-of-recovery Considerations:
+    * data replication
+    * automated backups
+    * failover configurations
+
+- Patch-availability Considerations
+    * enhance the security and stability of their systems
+    * minimize the risk of potential exploits
+    * ensure that the software remains up-to-date with the latest improvements and fixes
+
+- Considerations when theres an inability toi patch:
+    * compatibility issues
+    * vendor-support limitations
+    * critical Dependencies
+
+- Power Considerations
+
+- Compute Considerations
+
+SECURITY INFRASTRUCTURE CONSIDERATIONS:
+
+- Design a cybersecurity infrastructure, consider:
+    * security zones
+    * attack surfaces
+    * connectivity
+    * failure models
+    * active and passive devices
+
+- Security zones: help safeguard sens informatio and crit assets.
+    *categorizing different network segments, based on risk profiles and access requirements, security zones enable 
+        a granual approach to defense
+
+- Attack surfaces: influences organizations vulnerability landscape
+    * encompasses all potential points of entry that malicious acators could exploit to breach a system or network.
+    * reduce threat exposure by meticulous analysis
+
+- connectivity: servers as enabler and potential vulnerabaility.
+    * crucial for efficient data exchange, collab, and business ops
+    * must be carefully balanced with robust sec measures
+    * VPN, SSL, encrypted comm channels, ensures sens data remains encrypted and protected during transmission
+
+- Failure modes: fail open vs fail closed configurations, holds significance in meticulous planning of cybersec infra.
+    * determines how system reponsed in face of unexpected events or technical malfunctions
+        > Fail closed: ensures if failure or breach occurs, system defaults to a secure state, denying access and preserving
+            integrity of sensitive resources
+        > Fail open: while potentially maintaining operational continuity during failures, could inadvertently expose 
+            the network to vulnerabilities and unauthorized access.
+
+- Active and passive devices
+        > Active devices: (ex. intrustion detection systems and firewalls) proactively monitor and actively intervene
+            in network traffic to identify and mitigate threats in real-time.
+            >> dynamic response capabilities are vital for swiftly neutralizing emerging threats and enforcing sec policies.
+        
+        > Passive devices: (ex. networking monitoring tools and audit logs) observe and collect dat awithout actively
+            intervening.
+
+NETWORK APPLIANCES:
+
+- Jump servers: serve as intermediary access point between different security zones, typically within a secure network
+    an external network, such as the internet.
+    * act as gateway for admin and authorized users to access sensitive systems and resources residing in protected areas
+
+- Proxy servers: intermediary between client devices and other servers on the internet. When a client sends a request for 
+    a resource, a proxy server intercepts the request and forwards it to the destination server.
+    * provides several benefits, including enhancing privacy and security and performance optimization
+    * can mask identity and location of the original requester, adding a layer of anonymity.
+
+- Intrusion prevention system (IPS) and intrustion detection system (IDS): designed to actively identify, prevent, and
+    respond to unauthorized or malicious activities within a network environment.
+    * constanly monitors incoming and outgoing traffic, analyzing it for patterns and signatures indicative of known 
+        attacks, vulnerabilities, or suspicious behavrior
+    * upon detection, IPS can immediate action to block, quarantine, or alert administrators about the potential threat,
+        thereby helping prevent cyber attacks, data breaches, or other sec incidents.
+    * IDS can identify an attack is taking place and notify you, but doesnt take action to mitigate an attack
+        like an IPS
+        > many devices today ahve both IPS and IDS capabilities
+
+- Load Balancers: vital for distributing incoming network traffic across multiple servers or resources. 
+    * primary obj to optimize the utilization of available resources, enhance performance, and ensure high availability    
+        of apps or services.
+    * helps prevent any single server from being overwhelmed by evenly distributing incoming requests.
+    * helps mitigate the risk of downtime or performance bottlenecks.
+
+- Sensors: collects or monitors various types of data and activities within the network environment.
+    * acts as observant node, sensors continuously gather info about network traffic, user behavior, system performance
+        and potential sec threats.
+    * data then analyzed and processed to provide insights into networks overall health, usage patterns, and pot vuln.
+    * enhance network management, sec and optimization by enabling realtime detection of anomolies, breaches or unus behav.
+
+PORT SECURITY:
+
+- What is IEEE 802.1X?: standard that defines port-based network access control.
+    * w/802.1X devices attempting to connect to a network port are required to undergo an authentication process before
+        being granted access.
+    * involves three key components:
+        > supplicant (connecting devices)
+        > authenticator (the network switch or access point)
+        > authentication server (verifies user credentials)
+    * in 802.1X context, EAP is a framework that enables various authentication methods to be used within 802.1X framework.
+    * This flexibility allows organizations to choose the most suitable authentication mechanism for their environment EAP methods:
+        > usernamen and password   
+        > digital certificates
+        > tokens
+        > more advaned methods (biometric authentication)
+
+- device connects to network port -> sends EAP request to authenticator -> forwards it to authentication server -> 
+    verifies crednetials provided by the device and informs the authenticator wheter access should be granted or denied ->
+    successful authentication -> port is enabled for data comms; otherwise port remains inactive.
+
+FIREWALL TYPES:
+
+- Layer 4 (L4) thorugh Layer 7 (L7): applicaton or advanced firewall.
+    * provide more granular and cotext-aware security measures by inspecting and controlling traffic based on application-specific
+        information, user behavior, and content
+        > unlike lower-layer FW that focus on source and destination addresses, these fw delve into content and cotext of data packets
+
+- WAFs: web app fw, positioned between a web server and its users, analyzes and filters incoming HTTP and HTTPS traffic,
+    scrutinizing it for malicious activies, unauthorized access attempts, and app-layer vulnerabilities
+    * protect web apps from cyber threats and vulnerabilities. 
+    * operate by enforcing security policies based on understanding of web-application behavior and common attack patterns, such
+        as SQL injection, cross-site scripting (XSS), and cross-site request forger (CSRF).
+    * actively inspecting the content, headers, and parameters of incoming requests, a WAF identifies and blocks malicious
+        requuests, effectively preventing attackers from exploiting potential weaknesses in the application's code or design.
+
+- UTM firewalls: combines multiple sec functionalities into a single platform, designed to protect networks from a diverse range
+    of cyber threats. Unlike traditional firewalls that focus primarily on packet filtering and access control, UTM firewalls offer
+    an integrated suite of security features including:
+    * IDS, IPS
+    * antivirus and atimalware
+    * content filtering
+    * application control
+    * VPNs
+
+- NGFW: next-gen fw, goes beyond traditional fw functions to provide defense against modern cyber threats. Unlike conventional
+    fw that primarily focus on port and protocol filtering, next-gen fw off a blend of capabilities including:
+    * deep packet inspection
+    * intrusion prevention
+    * applicaiton awareness and control
+    * user identity tracking
+    * integrated threat intelligence
+        > features enable NGFWs to analyze the content and context of network traffic, identifying both known and unknown threats
+            , and providing the ability to block malicious activities in real time. NGFWs often incorporate advanced threat-detection
+                mechanisms, such as behavioral analysis and machine learning, to identify emerging threats and zero-day vulnerabilties.
+
+SECURE COMMUNICATION AND ACCESS:
+
+- VPN: establishing secure and encrypted connection over a public or untrusted network such as internet, allowing users to access
+    and transmite data as if they were directly connected to a private network.
+    * by creating virtual tunnel between the users device and a VPN server, VPNs ensure privacy, anonymity, and data integrity,
+        and they effectively shield online activies from potential eavesdropping, censorship or cyber attacks.
+
+- TLS: cryptographic protocol ensures secure comms over computer networks, most commonly the internet.
+    * functions by establishing an encrypted and authenticated connection between two parties, typically a client and a server
+        thereby safeguarding the confidentiality and integrity of data exchanged during online interactions.
+        > combo of asymmetric and symmetric encryption techniques to secure the data transmission, preventing unauthorized
+            access, data tampering, and eavesdropping.
+
+- IPSec:suite of protocols and algorithms used to secure and authenticate IP comms at network layer. 
+    * offers a framework for creating encrypted and authenticated comms between devices, such as routers or VPN gateways, to ensure
+        confidentiality, integrity, and authenticity of data transmitted over potentially untrusted networks such as internet.
+
+- SD-WAN: enhances and simplified mangement of WANs by levraging software-defined principles to optimize the routing and
+    distribution of network traffic. Allows orgs to efficiently connect and manage geographically dispersed locations, such
+    as branc hoffices or data centers, by dynamically choosing the most appropriate and effience pathways for data transmi..
+    * utilize a combo of public int, private connects, and cell networks, prio critical apps and ensuring optimal performance
+        through features like quality of service (QoS) and traffic shaping.
+
+- SASE: modern network architecture integrates network security and WAN capabilities into a unified cloud-based platform.
+    by converging traiditional disparate functions such as firewalling, secure web gateways, VPNs, and more.
+    * emphasizing delivering security and networking services as a service from the cloud, allowing organizations to provide
+        secure access to applications and data for both on-premises and remote users, regardless of their location.
+    * SASE adapts security policies based on user context and application requirements
+
+SELECTING EFFECTIVE CONTROLS:
+
+- admin controls
+    * encompass:
+        > policies
+        > guidelines
+        > procedures
+        > practices impolemented by organizations to manage mitigate risks related to info sec
+
+- technical controls
+    * firewalls
+    * IDS
+    * encryption
+    * access controls
+    * Authentication mechanisms
+    * network segmentation
+
+- physical controls
+    * biometric authentication
+    * surveillance systems
+    * security guards
+    * locked cabinets
+    * areas of restricted access
+
+DATA TYPES:
+
+- regulated data
+    * sensitive and PII of individuals
+    * financial records
+    * healthcare records
+    * intellectual property
+    * other confidential details
+
+- trade secrets
+
+- intellectual property
+    * inventions
+    * trademarks
+    * copyrights
+    * trade secrets
+    * artistic works
+
+- legal information
+    * legislative texts
+    * court decisions
+    * contracts 
+    * compiance documents
+    * legal opinions
+
+- financial information
+    * financial statements
+    * balance sheets
+    * income statements
+    * cash-flow reports
+    * budge projections
+    * investment records
+
+- human and non-human readable
+
+DATA CLASSIFICATION:
+
+- Potential data classification include:
+    * sensitive
+    * confidential
+    * public
+    * private 
+    * restricted
+    * critical
+
+- US gov classifications:
+    * confidential
+    * secret
+    * top secret
+
+DATA CONSIDERATIONS:
+
+- Data states:
+    * data at rest
+    * data in transitions
+    * data in use
+
+- Data sovereignty: concept that individuals, organizations, or govenrments have the inherent right and control over the data generated
+    , processed, and stored within their respective jurisdicitons. Emphasizes the authority of data owners to determine
+        how their dat ais collected, utilized, and shared, ensuring that sensitive info remains subject to local 
+        regulations and laws.
+    * addresses concerns about privacy, seucrity and jurisdictional boundaries
+
+- Geolocation: process of associating location-based info with various data points that an organization generates, collects,
+    or utilizes.
+    * enables enterprised to visualize and analyze data in geo contexts, aiding in decision-making, rseource allocation, and
+        strategic planning
+
+METHODS TO SECURE DATA:
+
+- variety of ways to protect data
+    * geographic restrictions
+    * encryption
+    * hashing
+    * masking
+    * tokenization
+    * obfuscation
+    * segmentation
+    * permission restrictions
+
+HA AND SITE CONSIDERATIONS:
+
+- key factors that help ensure high availability, including:
+    * load balancing: evenly distributes incoming network traffic or computational tasks across multiple servers to:
+        > help prevent any single server from becoming overwhelmed
+        > minimize the risk of downtime due to server failures or congestion.
+
+    * clustering: group multiple interconnected servers or nodes together, enabling them to work collaboratively. Ensures that
+        one node failes, another can seamlessly take over its tasks, minimizing service disruptions and maintaining continuous ops
+
+    * site considerations:
+        > hot site: ready for immediate cut-over form the main solution or infrastructure and that requires no time to ready for Produciton
+        > warm site: requires relatively samll amount of time to be ready for produciton, as contrasted with a hot site
+        > cold site: requires considerable time and effort to have the site ready for produciton
+        > geographic dispersion: when youre choosing sites for high availability, you should consider choosing redundant sites
+            that are geographically dispersed
+        
+PLATFORM DIVERSITY AND MULTICLOUD SYSTEMS:
+
+- PLatform diversity:helps organizaitons reduce dependency on a single technology stack, which helps mitigate risk of
+    widespread failures due to vulnerabilities or outages specific to one platform. fosters adaptibility, enabling businesses
+    to select most suitable tools for specific tasks, optimize resource allocation, and tailor solutions to their unique needs.
+    Encourages innovation, as teams can experiment with new platforms to identicy novel ways to optimze processes and achieve comp advant.
+    * Different operation systems
+    * Cloud providers
+    * software frameworks
+
+- Multi-cloud systems: leverage multiple cloud providers, organizations can diversify their risk exposure and reduce the impact
+    of potential service outages or disruptions form a single provider. This redudancy ensures uninterrupted ops and 
+        better disaster recovery capabilities
+    * approach helps avoid vendor lock-in, granting freedom to switch providers or adopt new tech as needed.
+    * encourage innovation by fostering compet landscape among providers, prompting to continually imrpove services and feats.
+
+CONTINUITY OF OPERATIONS AND CAPACITY PLANNING:
+
+- Business continuity
+    * critical considerations
+        > first: comprehensive disaster-recovery plans must be in place to mitigaate the impact of unexpected disruptions, encompassing
+            data backup, restoration procedures nad redundancy strategies
+        > second: reliance on digital systems necessitates robust cybersec measures to safeguard against cyber threats
+            and data breaches, maintaining the integrity and confidentiality of sensitive information.
+        > third: cloud-based solutions and remote work capabilities should be integrated, facilitating seamless operations
+            even during unforeseen circumstances that might limit physical access to the workplace.
+
+- Capacity planning
+    * Effective capacity planning within an orgs IT department involves a comprehensive approach that encompasses people, tech
+            , and infrastructure ocnsiderations:
+        > people: one the poeople front, capacity planning requires a clear understanding of the workforces skills, expertise, and availability
+            to handle current and future demands. Adequate staffing levels, training programs, and skill-development initiatives are crucial
+            to ensure that a team can effectively manage increased workloads
+        > technology: with respect to technology, capacity planning involves assessing current hardware and software resources, and their
+            scalability, to accommodate growing needs. This includes evaluating server capacities, network bandwith, and storage  
+            capabilitiues to prevent bottlenecks and ensure optimal performance.
+        > infrastructure: include understanding datacenter capabilities, cloud services, and disaster-recovery capabilities to ensure
+            seamless operations in the face of unexpected events.
+
+TESTING:
+
+- testing techniques:
+    * tabletop exercise: simulation or role-playing exercise that allows individuals or teams to assess and improve their
+        response to various sec incidents, crises, or cyber threats in a controlled and interactive environment
+        > conducted typically in meeting rooms or similar stretching
+
+    * failover testing: assesses how well a system maintains its securit yposture and safeguards data and resources during and after
+        a failover event. This is crucial because during a failover, the system might become more vulnerable to sec breaches due to rapidly
+        transition, change in network paths, or other factors that could disrupt security controls.
+
+    * simulation
+
+    * parallel processing: refers to simultaneous execution of multiple sec tasks, assessments or tests to improve efficiency,
+        reduce testing time and gain a more comprehensive understanding of an organizations sec posture. This approach involves
+        dividing the testing workload into smaller taskss that can be executed concurrently, leveraging the power of modern computing
+        systems to complete assessments more quickly.
+
+BACKUPS:
+
+- Onsite and offsite backups
+
+- Frquency
+    * high-priority and frequently changing data, such as transaction records and customer information, may require frequent
+        backups, sometimes as often as every few hours.
+    * less critical dat amight be backed up daily or even weekly
+
+- Encryption
+
+- Snapshots: provides point-in-time copies of data, which allows for efficient and rapid recovery while minimizing the impact
+    on production systems.
+
+- Recovery: verifies the effectiveness of the backup process and ensures the ability to restore systems and data accurately in
+    real-world scenarios. This helps minimize downtime and potential data loss.
+
+- replication: creating real-time duplicates of data and applications across separate systems or locations. enhances both
+    data availability and disaster-recovery readiness
+
+- journaling: recording and tracking changes to data over time, thereby allowing for efficient incremental backups and streamlined
+    data-restoration processes.
+
+POWER:
+
+- Generators
+
+- UPS systems
