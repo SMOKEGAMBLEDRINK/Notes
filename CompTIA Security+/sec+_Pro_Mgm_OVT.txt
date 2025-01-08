@@ -1,0 +1,207 @@
+GUIDELINES AND POLICIES:
+
+- AUPs
+
+- ISPs
+
+- Business continuity policies
+
+- disaster recovery policies
+
+- incident response policies
+
+- SDLC
+
+- change management policies
+
+STANDARDS AND PROCEDURES:
+
+- Standards areas of development:
+    * Passwords
+    * access control
+    * physical security
+    * encryption
+
+- procedures areas of development:
+    * change management
+    * onboarding and offboarding
+    * playbooks
+
+EXTERNAL CONSIDERATIONS AND REVISIONS:
+
+- plan effective security governance:
+    * regulatory
+    * legal
+    * industry
+    * local and regional
+    * national
+    * global
+
+GOVERNANCE STRUCTURES:
+
+- Boards:
+    * fiduciary responsibility
+    * guides decision-making
+    * holds management accountable
+
+
+- Committees: involves forming specialized groups responsible for addressing specific areas of concern, such as finance, audit,
+    or ethics.
+
+- Government entities:
+    * ensuring fair competition
+    * safeguarding public interests
+    * enforcing regulations to maintain ethical practices and accountability within the industry
+
+- Centralized and Decentralized governance
+
+ROLES AND RESPONSIBILITIES:
+
+- owners
+    * setting permissions
+    * defining data-lifecycle protocols
+    * ensuring compliance with relevant regulations to maximize datas value while minmizing risks
+
+- controllers
+    * managing data-processing activies
+    * ensuring compliance with data-protection regulations
+    * safeguarding individuals rights and privacy
+
+- processors
+    * executing tasks as instructed
+    * maintaining security measures
+    * adhering to contractual agreements to ensure the lawful and responsible handling of data
+
+- custodians
+    * implementing access controls
+    * maintaining data integrity
+    * ensuring compliance with establishing policies to uphold the confidentiality and availability of the data
+
+- stewards
+    * collab with various stakeholders to ensure accurate data
+    * facilitating effective decision-making
+    * aligning data practices with an organizations goals
+
+RISK ANALYSIS:
+
+** common analysis metrics
+- SLE 
+- ALE 
+- ARO 
+- Probability
+- likelihood
+- EF 
+- Impact 
+
+RISK REGISTER, TOLERANCE, AND APPETITE:
+
+- Risk register: list of risks associated iwth a system:
+    * category
+    * Probability
+    * impact
+    * possible mitigation
+    * other key values
+
+- Risk tolerance: level of uncertainty or potential loss that a company is willing to accept in pursuit of its business obj
+
+- Risk appetite: describes company risk tolerance
+    * Expansionary
+    * Conservative
+    * Neutral
+
+RISK MANAGEMENT STRATEGIES:
+
+- risk-management methods (common):
+    * transfer
+    * accept
+    * avoid
+    * mitigate
+
+RISK REPORTING AND BAI:
+
+- business impact analysis
+    * RTO: presents the amount of time you can afford to have systems remain disabled
+    * RPO: presents the point in time you would need to restore to after a risk has been realized
+    * MTTR: attempts to present the approximate amount of time that a system will take to be repaired
+    * MTBF: attempts to present the amount of time that willi elapse between failurs of a device or a system
+
+VENDOR ASSESSMENT AND SELECTION:
+
+- third-party assessments
+- pen testing
+- right-to-audit clause
+- evidence of internal audits
+- independent assessments
+- supply-chain analysis
+- vendor selection 
+
+AGREEMENT TYPES:
+
+- types:
+    * SLA (service-level agreement) defines the specific performance expectations and metrics agreed upon between a service provider and a client,
+        and outlines:
+        > quality of services
+        > response times
+        > remedies in case of service disruptions
+    * MOA(memorandum of agreement): a formal doc that outlines the terms, roles, responsibilities and obligations of parties entering into a cooperative
+        or collaborative arrangement, typically for a specific project or initiative.
+    * MOU(memorandum of understanding): a nonbinding doc that outlines the intentions, goals, and general terms of a cooperation between parties,
+        serving as a framework for potential future agreements
+    * MSA(master service agreement): a comprehensive contract that sets out overarching terms and conditions for ongoing business relationships between parties,
+        serving as a framework for potential future agreements.
+    * WO(work order): a formal doc that specifies the details of a specific task, project, or service that a client requests from a vendor,
+        including:
+        > scope
+        > timelines
+        > deliverables
+        > associated costs 
+    * SOW(statement of work): a detailed doc attached to a contract or agreement that outlines a particular projects specific tasks, deliverables, timeline,
+        and expectations, thereby providing a clear scope of work for all parties involved.
+    * NDA
+    * BPA (business partners agreement): a formal doc that outlines the terms and conditions governing a business partnership between two or more entities, 
+        specifying their rsepective roles, contributions, profit-sharing and responsibilities.
+
+COMPLIANCE:
+
+- Consequences of noncompliance:
+    * fines 
+    * sanctions 
+    * reputational damage
+    * loss of license
+    * contractual impacts
+
+COMPLIANCE MONITORING:
+
+- Due dilgence
+
+- attestation: formal confirmation and validation of an organizations adherence to specific ecurity standards, often through audits
+    or assessments
+
+- acknowledgement: formal recognition by employees or stakeholders of their understanding and acceptance of sec policies.
+
+- internal: evaluation and enforcement of an organizations own policies, procedures, and security controls
+
+- external: assessments by third-party entitites to verify organizations compliance with:
+    * external regulations
+    * industry benchmarks
+    * best practices
+
+AUDITS:
+
+- internal audits:
+    * compliance
+    * audit committee
+    * self-assessments
+
+- external audits:
+    * regulatory
+    * examinations
+    * assessments
+    * independent third-party audit
+
+ANOMALOUS BEHAVIRO RECOGNITION:
+
+- risky
+- unexpected
+- unintentional
+

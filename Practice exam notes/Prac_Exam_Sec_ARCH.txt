@@ -1,0 +1,15 @@
+802.1X - authentication of devices that connect to network
+
+EAP-802.1X same section
+
+Hybrid architectural model - underlying infra managed by third party  c;cloud provider, org wants to retain ability to deploy other services
+
+Data sovereignty - company resides US but CISO concerned about udata stored in Europe server.
+
+SASE - provide encrypted comms btw remote users and internal netowrk to prevent unauth access and eavesdropping.
+    * allow users to securely access internal resources and apps remotely over internet
+
+Incremental vs differential - incremental backup backup vs full backup backup
+
+perimeter network - secure boundary between a netoworks private and its public side
+

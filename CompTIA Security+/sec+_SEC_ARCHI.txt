@@ -61,7 +61,7 @@ VIRTUALIZATION CONCEPTS:
         > Typically manage containers using software such as KUBERNETES. Such packages are responsible for
             scheduling and securing container deployments.
 
-IOT AND SCADA:
+IOT AND SCADA (SUPERVISORY CONTROL AND DATA ACQUISITION):
 
 - IOT Architectures: security implications: refers to pieces that comprise IoT networking systems including sensors,
     actuators, cloud services, protocols and layers. 
@@ -297,7 +297,7 @@ SECURE COMMUNICATION AND ACCESS:
     * utilize a combo of public int, private connects, and cell networks, prio critical apps and ensuring optimal performance
         through features like quality of service (QoS) and traffic shaping.
 
-- SASE: modern network architecture integrates network security and WAN capabilities into a unified cloud-based platform.
+- SASE (secure access service edge): modern network architecture integrates network security and WAN capabilities into a unified cloud-based platform.
     by converging traiditional disparate functions such as firewalling, secure web gateways, VPNs, and more.
     * emphasizing delivering security and networking services as a service from the cloud, allowing organizations to provide
         secure access to applications and data for both on-premises and remote users, regardless of their location.
